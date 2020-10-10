@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer"
 
-const emailPass = "241358mmB!"
+const emailPass = "241358mmb"
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
