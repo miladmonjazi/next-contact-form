@@ -178,7 +178,7 @@ class Contact extends Component {
     event.preventDefault()
 //[6]
 
-    const recipientMail = "miladtestmail@gmail.com"
+    const recipientMail = process.env.EMAIL
     const { name, mail, formContent } = this.state
 
     const res = await sendContactMail(recipientMail, name, mail, formContent)

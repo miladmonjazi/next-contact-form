@@ -1,11 +1,11 @@
 import nodemailer from "nodemailer"
 
-const emailPass = "241358mmb"
+const emailPass = process.env.PASSWORD
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "miladtestmail@gmail.com",
+    user: process.env.EMAIL,
     pass: emailPass
   }
 })
