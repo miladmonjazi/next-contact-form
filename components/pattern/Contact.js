@@ -180,7 +180,6 @@ class Contact extends Component {
 
     //const recipientMail = "miladtestmail@gmail.com"
     const recipientMail = process.env.NEXT_PUBLIC_MY_EMAIL
-    console.log(process.env.NEXT_PUBLIC_MY_EMAIL)
 
     const { name, mail, formContent } = this.state
 
